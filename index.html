@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
 <meta charset="UTF-8">
 <title>Minhas Contas</title>
-<link rel="stylesheet" href="style.css">
 
-<link rel="icon" href="icone.png
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icone.png">
 
 </head>
 
@@ -32,28 +33,33 @@
 </div>
 
 <footer>
-Direitos produçao e imagem reservados a ©Heitor Boaz
+Direitos produção e imagem reservados a © Heitor Boaz
 </footer>
 
+<!-- Script principal -->
 <script src="script.js"></script>
 
-<<<<<<< HEAD
+<!-- OneSignal -->
 <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+
 <script>
-  window.OneSignalDeferred = window.OneSignalDeferred || [];
-  OneSignalDeferred.push(async function(OneSignal) {
-    await OneSignal.init({
-      appId: "af2680ef-d2a4-4cae-b82e-5e5d88a60947",
-      safari_web_id: "web.onesignal.auto.516349e1-446e-4cea-8b68-2396bd3ac49a",
-      notifyButton: {
-        enable: true,
-      },
-    });
+
+window.OneSignalDeferred = window.OneSignalDeferred || [];
+
+OneSignalDeferred.push(async function(OneSignal) {
+
+  await OneSignal.init({
+    appId: "af2680ef-d2a4-4cae-b82e-5e5d88a60947",
+
+    notifyButton: {
+      enable: true
+    }
+
   });
+
+});
+
 </script>
 
 </body>
 </html>
-=======
-<script 
->>>>>>> 922e4a5f81d66d3ddd21664f812178b30459f5b8
