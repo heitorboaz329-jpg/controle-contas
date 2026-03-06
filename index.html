@@ -37,5 +37,19 @@ Direitos produçao e imagem reservados a ©Heitor Boaz
 
 <script src="script.js"></script>
 
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "af2680ef-d2a4-4cae-b82e-5e5d88a60947",
+      safari_web_id: "web.onesignal.auto.516349e1-446e-4cea-8b68-2396bd3ac49a",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
+
 </body>
 </html>

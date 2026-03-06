@@ -1,6 +1,6 @@
 body{
 font-family: Arial;
-background:#f4f4f4;
+background:#182066;
 text-align:center;
 margin:0;
 padding-bottom:60px;
@@ -41,7 +41,7 @@ position:fixed;
 bottom:0;
 width:100%;
 background:#111;
-color:white;
+color:rgb(243, 243, 243);
 padding:10px;
 font-size:12px;
 
