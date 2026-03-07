@@ -16,7 +16,7 @@ function verificarContas(contas) {
       );
 
     }
-
+6 
   });
 
 }
