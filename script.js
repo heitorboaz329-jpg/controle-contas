@@ -122,7 +122,6 @@ TEMPO RESTANTE
 ============================== */
 
 function calcularTempoRestante(dataISO) {
-
   const agora = new Date();
   const partes = dataISO.split("-");
 
@@ -140,3 +139,31 @@ function calcularTempoRestante(dataISO) {
 
   return `${dias}d ${horas}h ${mins}m`;
 }
+
+function renovarContasMensalmente() {}
+  const hoje = new Date();
+  const mesAtual = hoje.getMonth();
+  const anoAtual = hoje.getFullYear();
+
+  let ultimoMesSalvo = localStorage.getItem("mesAtual");
+
+  if (ultimoMesSalvo != mesAtual) {
+
+    Object.keys(contas).forEach(grupo => {
+      contas[grupo].forEach(conta => {
+
+        // pega o dia original
+        const partes = conta.vencimento.split("-");
+        const dia = partes[2];
+
+        // atualiza para mês atual
+        conta.vencimento = `${anoAtual}-${String(mesAtual + 1).padStart(2, '0')}-${dia}`;
+
+        // reseta status
+        conta.status = "nao_paga";
+
+      });
+    });
+
+    localStorage.setItem("mesAtual", mesAtual);
+    renovarContasMensalmente();  }
